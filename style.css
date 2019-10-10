@@ -1,0 +1,36 @@
+body {
+    background-color:rgb(192, 255, 241);
+}
+
+.balls {
+    border-radius: 50%;
+    position: fixed;  
+    width: 100px;
+    height: 100px;
+    top: 60%;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+}
+#red {
+    background-color: red;
+    left:25%;
+    animation-timing-function: linear;
+}
+#yellow {
+    background:yellow;
+    left: 50%;
+    animation-timing-function: ease-out;
+  }
+  #blue{
+    background:blue;
+    left: 75%;
+    animation-timing-function: cubic-bezier(0.69, 0.1, 1,3);
+  }
+  @keyframes jump {
+    50% {
+      top: 10%;
+    }
+  }
